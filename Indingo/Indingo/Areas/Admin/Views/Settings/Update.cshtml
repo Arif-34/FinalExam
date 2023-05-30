@@ -1,0 +1,23 @@
+﻿@model Setting
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-md-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Update</h4>
+
+                    <form class="forms-sample" method="post" >
+                        <div class="form-group">
+                            <label asp-for="Value">Value</label>
+                            <input asp-for="Value" placeholder="Value">
+                            <span asp-validation-for="Value"></span>
+                        </div>
+                 
+                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        <button class="btn btn-light" asp-controller="settings" asp-action="index">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
